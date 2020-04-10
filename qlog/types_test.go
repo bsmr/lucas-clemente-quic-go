@@ -71,6 +71,10 @@ var _ = Describe("Types", func() {
 		Expect(PacketDropProtocolViolation.String()).To(Equal("protocol_violation"))
 		Expect(PacketDropDOSPrevention.String()).To(Equal("dos_prevention"))
 		Expect(PacketDropUnsupportedVersion.String()).To(Equal("unsupported_version"))
+		Expect(PacketDropUnexpectedVersionNegotiation.String()).To(Equal("unexpected_version_negotiation"))
+		Expect(PacketDropUnexpectedRetry.String()).To(Equal("unexpected_retry"))
+		Expect(PacketDropUnexpectedSourceConnectionID.String()).To(Equal("unexpected_source_connection_id"))
+		Expect(PacketDropUnexpectedVersion.String()).To(Equal("unexpected_version"))
 	})
 
 	Context("transport errors", func() {
